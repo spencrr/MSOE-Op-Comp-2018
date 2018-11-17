@@ -1,6 +1,6 @@
 text = input('Enter plain or cipher text: ').upper()
 text += ' ' * ((5 - len(text) % 5) % 5)
-key = '{0:030b}'.format(int(input('Enter key : ')))
+key = '{0:030b}'.format(int(input('Enter key: ')))
 reduced = [ord(n) - 32 for n in text]
 binary = ['{0:06b}'.format(n) for n in reduced]
 cipher = ''
